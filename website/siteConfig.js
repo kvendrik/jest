@@ -97,6 +97,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'getting-started', label: 'Docs'},
     {doc: 'api', label: 'API'},
+    {page: 'playground', label: 'Playground'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
     {languages: true},
