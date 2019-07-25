@@ -82,7 +82,7 @@
   border-left-style: solid;
 }
 
-.blockContent > div {
+.blockContent>div {
   margin: 16px 0 0 18px;
 }
 
@@ -95,12 +95,14 @@
 .container.intro .wrapper {
   max-width: 960px;
 }
+
 .container .wrapper .imageAlignSide p {
   margin-bottom: 0;
 }
 
 /*  On mobile, show the screenshot under the body */
 @media only screen and (max-width: 780px) {
+
   /* Ensure the consistent order of text first, then image */
   .container .wrapper .imageAlignLeft {
     flex-flow: row wrap-reverse;
@@ -152,14 +154,15 @@
 }
 
 @media only screen and (min-width: 736px) {
+
   /* Medium desktop and up */
   .container .yellow.blockElement {
     width: 25%;
   }
 }
 
-.gridBlock.philosophy > *:first-child,
-.gridBlock.logos > *:first-child {
+.gridBlock.philosophy>*:first-child,
+.gridBlock.logos>*:first-child {
   margin-left: 0;
 }
 
@@ -169,7 +172,7 @@
   width: 56px;
 }
 
-.gridBlock > *:first-child {
+.gridBlock>*:first-child {
   margin: 0 12px;
 }
 
@@ -263,15 +266,7 @@ div.navigationSlider .slidingNav ul {
   color: var(--grey3);
 }
 
-body
-  > div.fixedHeaderContainer
-  > div
-  > header
-  > div
-  > nav
-  > ul
-  > li.siteNavGroupActive.siteNavItemActive
-  > a {
+body>div.fixedHeaderContainer>div>header>div>nav>ul>li.siteNavGroupActive.siteNavItemActive>a {
   background-color: #10910e;
   color: white;
 }
@@ -284,7 +279,48 @@ body
   .show-small {
     display: none;
   }
+
   .hide-small {
     display: block;
   }
+}
+
+.playground {
+  display: flex;
+}
+
+.playground__sidebar {
+  width: 300px;
+  background: #f7f7f7;
+  border-right: solid 1px var(--grey2);
+}
+
+.playground__nav {
+  padding: 0;
+}
+
+.playground__nav li a {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.playground__title {
+  font-size: 1rem;
+  height: 40px;
+  margin: 0;
+  border-bottom: solid 1px var(--grey2);
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem;
+}
+
+.playground__nav li a.is-active {
+  background: var(--grey2);
+}
+
+.playground__nav li a:hover {
+  background: var(--grey2);
 }
