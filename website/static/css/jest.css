@@ -290,7 +290,7 @@ body>div.fixedHeaderContainer>div>header>div>nav>ul>li.siteNavGroupActive.siteNa
 }
 
 .playground__sidebar {
-  width: 300px;
+  width: 250px;
   background: #f7f7f7;
   border-right: solid 1px var(--grey2);
 }
@@ -300,11 +300,13 @@ body>div.fixedHeaderContainer>div>header>div>nav>ul>li.siteNavGroupActive.siteNa
 }
 
 .playground__nav li a {
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 0.6rem 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1em;
   color: black;
+  transition: background-color .2s ease;
 }
 
 .playground__title {
@@ -317,10 +319,10 @@ body>div.fixedHeaderContainer>div>header>div>nav>ul>li.siteNavGroupActive.siteNa
   padding: 0 0.75rem;
 }
 
-.playground__nav li a.is-active {
+.playground__link--is-active {
   background: var(--grey2);
 }
 
-.playground__nav li a:hover {
+.playground__nav a:hover {
   background: var(--grey2);
 }
